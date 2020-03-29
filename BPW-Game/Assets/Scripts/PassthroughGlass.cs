@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PassthroughGlass : MonoBehaviour
+public class GlassToggle : MonoBehaviour
 {
     public PlayerMovement player;
 

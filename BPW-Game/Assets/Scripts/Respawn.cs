@@ -7,9 +7,11 @@ public class Respawn : MonoBehaviour
     public Transform player;
     public Transform respawnPoint;
 
-    void onTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        player.GetComponent<CharacterController>().enabled = false;
+        Debug.Log("Triggered");
         player.transform.position = respawnPoint.transform.position;
-        Debug.Log("YOOOOOOOOOOOOOO");
+        player.GetComponent<CharacterController>().enabled = true;
     }
 }
